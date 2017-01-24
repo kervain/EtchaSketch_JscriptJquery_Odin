@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etch A Sketch</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Qwigley|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<header>
+<h1>Your very own digital<br> Etch-a-Sketch!</h1>
+			<div class="controls">
+				<label for="new-width">Enter a width greater than 1: </label><input id="new-width" name="new-width" type="text" value="32" placeholder="Canvas width"><br><button id="set-width">Create New Board!</button>
+			<button id="reset">Start Over</button>
+      </div>
+     </header> 
+   <section>
+  <div id='eas'>
+				<p><span>MAGIC </span>Etch A Sketch<span class="reg">&reg;</span><span> SCREEN</span></p>
+				<div id='eas-screen'>
+
+				</div>
+        
+        <div class='knob left'></div>
+				<div class='knob right'></div>
+        </div>
+        </section>
+        <script src="Sketch.js"></script>
+</body>
+</html>
+

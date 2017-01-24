@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+}
+  *,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#4AC948 ,   #CDC9A5);
+    padding-right: 15px;
+}
+
+
+header, 
+.controls {
+    text-align: center;
+}
+
+header {
+
+    margin: 10px auto;
+}
+
+h1 {
+    margin: 175px 0 20px;
+    font-size: 44px;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#new-width {
+    border-top: 0;
+  border-left: 0;
+    border-right: 0;
+  border-bottom: 1px solid black;
+  width: 40px;
+  font-size: 18px;
+    background: rgba(0,0,0,0);
+  text-align: center;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+  border-radius: 15px;
+    border: none;
+  background: #F06060;
+    margin: 5px 15px;
+  transition: background .5s;
+  outline: none;
+  cursor: pointer;
+    
+}
+
+
+button:hover {
+    background: red;
+}
+
+#eas {
+    background: red;
+  border-radius: 50px;
+  padding-bottom: 40px;
+  width: 680px;
+  margin: 20px auto 20px;
+  position: relative;       
+}
+#eas p {
+    text-align: center;
+  color: gold;
+  font-family: 'Qwigley', cursive;
+    font-size: 44px;
+    padding: 5px 0;
+}
+
+
+#eas p span {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serf;
+    font-syle: italic;
+    margin: 0 15px 20px;    
+}
+
+
+#eas p span.reg {
+    position: relative;
+  margin-left: 5px;
+    margin-right: 0;
+    font-size: 14px;
+}
+
+
+#eas-screen {
+    text-align: center;
+  margin: 0 auto 20px;
+  position: relative;
+    width: 480px;
+  background: #ededed;
+  border-radius: 20px;
+  padding: 10px;
+    box-shadow: inset 0 0 5px black;
+}
+
+.row {
+    display: flex;
+}
+
+
+.box {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background: #000;
+    opacity: 0;
+}
+
+.knob {
+    background: white;
+    border-radius: 50%;
+    border: 8px solid #f1f1f1;
+    width: 60px;
+    height: 60px;
+    display: inline-block;  
+    position: absolute;
+    bottom: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+}
+
+.erase {
+    -webkit-animation: erase .35s 3;
+    transition: opacity 1s;
+}
+
+@-webkit-keyframes erase {
+    50%   { transform: translateY(15px) }   
+}
+
+
+
+
+
+
